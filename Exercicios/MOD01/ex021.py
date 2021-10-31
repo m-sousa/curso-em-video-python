@@ -1,7 +1,8 @@
+import pathlib
 import pygame
 
 pygame.init()
-pygame.mixer.music.load('d:/dev/curso-em-video/mod01/Exercicios/ex021.mp3')
+pygame.mixer.music.load(pathlib.Path(__file__).parent.resolve().joinpath('ex021.mp3'))
 pygame.mixer.music.play()
-#pygame.event.wait()
-x = input('Digite algo para parar...')
+
+input('Digite algo para parar...')
